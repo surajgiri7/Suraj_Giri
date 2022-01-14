@@ -6,7 +6,6 @@
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  /* background-color: rgb(255, 211, 161); */
   /* padding-bottom: 8px; */
   /* align-items: center;
   justify-content: center; */
@@ -15,7 +14,7 @@ body {
 .header {
   position: relative;
   width: 100%;
-  /* height: 100vh; */
+  /* height: 100vh */
   background-image: url(images/tree_n_car.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,7 +28,7 @@ body {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 100%;
   min-height: 100vh;
   /* margin: auto; */
   padding-left: 50px;
@@ -37,13 +36,15 @@ body {
 }
 
 .navbar {
-  position: fixed;
   width: 100%;
-  height: 60px;
+  position: fixed;
   display: flex; /*Navbar Contents: nav and logo div, on a single line*/
   align-items: center;
-  padding-top: 20px;
   padding: 1rem /*navbar leaves 20px from the outer container*/;
+}
+.navbar .logo{
+  height: 100%;
+  width: 10%;
 }
 
 .navbar .logo a {
@@ -65,32 +66,40 @@ body {
   transition: all 0.5s ease;
 }
 
-.navbar nav {
+/* .navbar nav {
   display: inline-block;
   align-items: center;
   flex: 1;
   text-align: center;
+} */
+
+.navbar nav {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  display:flexbox;
 }
 
 .navbar nav ul {
   display: inline-block;
   list-style-type: none;
   justify-content: left;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .navbar nav ul li {
   display: inline-block;
   margin-right: 20px;
   align-items: center;
+  font-size: large;
+  font-weight: bold;
 }
 
 .navbar nav ul li a {
   text-decoration: none;
-  color: #fff;
-  font-size: large;
-  font-weight: bold;
-  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
   padding: 8px 25px;
   transition: all 0.5s ease;
 }
@@ -104,7 +113,7 @@ body {
 }
 
 .home {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 /* .row {
@@ -155,7 +164,7 @@ body {
 
 .col1 .buttons .btn {
   color: white;
-  margin: 20px;
+  margin: 2px;
   justify-items: center;
   display: inline-block;
   border: none;
@@ -288,14 +297,13 @@ body {
   background: #184166;
 }
 
-
 .about_heading {
   /* display: inline-block; */
   margin: auto;
   padding: 100px;
   flex-wrap: wrap;
   text-align: left;
-  list-style-type:none;
+  list-style-type: none;
   color: #fff;
 }
 
@@ -310,27 +318,26 @@ body {
 }
 
 .about_heading ul li {
-  list-style-type:disc;
+  list-style-type: disc;
 }
 
-.about_heading ul li a{
+.about_heading ul li a {
   color: #fff;
 }
 
-.about_heading ul li a:hover{
+.about_heading ul li a:hover {
   color: black;
   background-color: white;
   opacity: 0.7;
   border-radius: 5px;
 }
 
-
 .about_heading .buttons {
   margin: 5px;
   text-align: left;
 }
 
-.about_heading .buttons .btn{
+.about_heading .buttons .btn {
   color: white;
   margin: 20px;
   justify-items: center;
