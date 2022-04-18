@@ -312,7 +312,7 @@ body {
 .about_heading {
   /* display: inline-block; */
   margin: auto;
-  padding: 8rem;
+  /* padding: 8rem; */
   flex-wrap: wrap;
   text-align: left;
   list-style-type: none;
@@ -347,6 +347,10 @@ body {
   opacity: 0.7;
   border-radius: 15px 15px 15px 15px;
   transition: all 0.5s ease;
+}
+
+.project_content h1{
+  text-align: center;
 }
 
 .card {
